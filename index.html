@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kovka-Art</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="image/logo.svg" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Работать у нас</a></li>
+        </ul>
+    </header>
+    <div class="about_as">
+        <h1>Поднемите статус вашего дома <br>украшая его элегантной ковкой</h1>
+        <h2>Для вас наш 20-ти летний опыт, <br>ковка на заказ и в продаже</h2>
+    </div>
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+            
+          <div class="swiper-slide" id="slide1"><h1>Кованые козырьки украсят ваш вход в дом</h1></div>
+          <div class="swiper-slide" id="slide2"><h1>Кованные кровати добавят уюта в вашу спальню</h1></div>
+          <div class="swiper-slide" id="slide3"><h1>Кованная мебель дополнит ваш интерьер</h1></div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="work-mode">
+        <div class="work-mode-element" id="elem1">
+            <h1>Закажите собственную ковку с индивдуальным дизайном и стилем </h1>
+        </div>
+        <div class="work-mode-element" id="elem2">
+            <h1>Закажите готовое изделие со склада и мы доставим его в кротчайшие сроки</h1>
+        </div>
+    </div>
+    <div class="feedback">
+        <h1 id="feedback-text">Оставьте свои<br> данные и мы<br> свяжемся с <br>вами </h1>
+        <div class="feedback-form">
+            <input type="text" class="feedback-input" value="Имя" onfocus="if (this.value=='Имя') this.value='' " onblur="if (this.value=='')
+            {this.value='Имя'}">
+            <input type="text" class="feedback-input" value="Номер телефона" onfocus="if (this.value=='Номер телефона') this.value='' " onblur="if (this.value=='')
+            {this.value='Номер телефона'}">
+            <input type="text" class="feedback-input" value="E-mail адрес" onfocus="if (this.value=='E-mail адрес') this.value='' " onblur="if (this.value=='')
+            {this.value='E-mail адрес'}">
+            <button id="feedback-button">Оставить заявку</button>
+            <img src="image/lock.svg" alt="">Ваши данные защищены
+        </div>
+    </div>
+    <footer>
+        2024 © Сайт разработан студнетом колледжа “26 КАДР”, группы ИС-11/9 <br>
+        м. Тульская, МЦК Крымская, Севастопольский пр-т, д. 5А
+        <ul class="socials">
+            <li><a href="#"><img src="image/Group-1.svg" alt=""></a></li>
+            <li><a href="#"><img src="image/Group-2.svg" alt=""></a></li>
+            <li><a href="#"><img src="image/Group-3.svg" alt=""></a></li>
+            <li><a href="#"><img src="image/Group.svg" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
