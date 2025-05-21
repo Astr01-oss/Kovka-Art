@@ -13,15 +13,20 @@
 </head>
 <body>
     <header>
-        <a href="#">
+        <a href="index.html">
             <img src="image/logo.svg" alt="" class="logo">
         </a>
         <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Работать у нас</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="training.html">Обучение</a></li>
+            <li><a href="#" onclick="reviews()">Отзывы</a></li>
+            <li><a href="#" onclick="contact()">Работать у нас</a></li>
         </ul>
+        <div class="hidden" id="contact" onmouseover="contact()" onmouseout="hide()">
+            Оставьте свой номер и мы свяжемся с вами!
+            <input type="number" value="+7">
+            <button>Отправить</button>
+        </div>
     </header>
     <div class="about_as">
         <h1>Поднемите статус вашего дома <br>украшая его элегантной ковкой</h1>
@@ -63,7 +68,7 @@
         </div>
     </div>
     <footer>
-        2024 © Сайт разработан студнетом колледжа “26 КАДР”, группы ИС-11/9 <br>
+        2024 © Сайт разработан студнетом колледжа “26 КАДР”, группы ИС-21/9 <br>
         м. Тульская, МЦК Крымская, Севастопольский пр-т, д. 5А
         <ul class="socials">
             <li><a href="#"><img src="image/Group-1.svg" alt=""></a></li>

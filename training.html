@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kovka-Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="image/logo.svg" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="training.html">Обучение</a></li>
+      <li><a href="#" onclick="reviews()">Отзывы</a></li>
+      <li><a href="#" onclick="contact()">Работать у нас</a></li>
+    </ul>
+    <div class="hidden" id="contact" onmouseover="contact()" onmouseout="hide()">
+      Оставьте свой номер и мы свяжемся с вами!
+      <input type="number" value="+7">
+      <button>Отправить</button>
+    </div>
+  </header>
+  <div class="training">
+    <h1>Если вы заинтересованы в обучении кузнечному делу, то Kovka-Art предостовляет курсы, а так-же проводит мастер-классы для учебных учереждений</h1>
+  </div>
+  <div class="training_choose">
+    <div class="training_choose-element" id="training_choose-elem1" onmouseover="hoverOn()" onmouseout="hoverOff()">
+      <h1>Курсы</h1>
+      <ul class='hidden ' id="training_choose-ul1">
+        <li>3-ех месячное обучение</li>
+        <li>Возможность работать с нами</li>
+        <li>Возможность начать личное дело</li>
+      </ul>
+      <button class='hidden' id="butt1">Связаться</button>
+    </div>
+    <div class="training_choose-element" id="training_choose-elem2" onmouseover="hoverOn2()" onmouseout="hoverOff2()">
+      <h1>Мастер-Класс</h1>
+      <ul class='hidden' id="training_choose-ul2">
+        <li>Эксекурсия  по рабочим местам</li>
+        <li>Наблюдение за работой мастера</li>
+        <li>Создание собственной ковки</li>
+      </ul>
+      <button class='hidden' id="butt2">Записаться</button>
+    </div>
+  </div>
+
+  </div>
+  <footer>
+    2024 © Сайт разработан студнетом колледжа “26 КАДР”, группы ИС-21/9 <br>
+    м. Тульская, МЦК Крымская, Севастопольский пр-т, д. 5А
+    <ul class="socials">
+      <li><a href="#"><img src="image/Group-1.svg" alt=""></a></li>
+      <li><a href="#"><img src="image/Group-2.svg" alt=""></a></li>
+      <li><a href="#"><img src="image/Group-3.svg" alt=""></a></li>
+      <li><a href="#"><img src="image/Group.svg" alt=""></a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
